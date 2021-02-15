@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Energy Generation Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -43,12 +43,86 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>visualizations</h1>
-									<p>All of my visualizations created through R</p>
+									<h1>Projects</h1>
+									<p>All of my Projects created through R</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+								<p><h2>Energy Generation in the United States from 1990 - 2019</h2>
+								<h3><a href = "https://sraza.shinyapps.io/Project1/">Click here to go to the website!</a>
+								</h3> 
+								<h3> <a href = "https://github.com/sraza1999/424_EnergyGeneration">Click here to go to Github!</a></h3> 
+								
+								<h3>Introduction</h3>
+								<p> There are many different sources of generating energy in the United States. Most of the popular ones are coal, solar and wind energy.
+								But there are many more such as wood, nuclear, petroleum, and geothermal. All of that data is availabe online so after some pre-processing 
+								you can see how much a specific energy source was generated throughout the years 1990 to 2019. The data is available in many different formats.
+								Some of the notable features are: 
+								<div class="col-6 col-12-small">
+									<ul>
+										<li><b>Line Graphs:</b> The initial line graphs show you the amount of generated energy for each of the 
+											energy sources from 1990 to 2019. 
+											Along with that, you're able to see what percentage each energy source occupied for a specific year.
+											If you'd like to only see specific energy sources, the checkboxes on the side assist with that.
+											<span><img src="images/linegraphs.png" alt="blar" width="850" height="600"/></span>
+										</li>
+										<li><b>Bar Graphs:</b> The bar graphs have a similar functionality like the line graphs but they are obivously 
+											represented different from a visual perspective. On the top, you will see a stacked bar chart with the total energy used for each source in MWh. On the bottom,
+											you can see what percentage each source took overall in a specific year from 1990 - 2019. 
+											<span><img src="images/bargraphs.png" alt="blar" width="850" height="600"/></span>
+									</li>
+										<li><b>Tables:</b> Through these tables, you will be able to go through all of the numbers for each state. And
+											similar to the features in the line graphs, if you would like to compare different energy source numbers and percentages 
+											throughout the year, just select the specific ones from the check box on the side!
+											<span><img src="images/tables.png" alt="blar" width="850" height="600"/></span>
+										</li>
+										<li><b>Comparision between States:</b> There are a lot of charts in this section but it allows
+											you to to compare the data between the states! And if you would like to see the exact number for 
+											a State, Energy Source, and Year, select them from the menu for the speciifc zone and it will show!
+											<span><img src="images/zones.png" alt="blar" width="850" height="600"/></span>
+										</li>
+										<li><b>Maps: </b> Finally in the last section, you are able to again manipulate two different zones.
+											In each of the zones you are able to select a specific energy source and year. Once that is done, you
+											can see the production of that energy source on the left-most map. The second map shows you 
+											the percentages for the speciifc combination of energy and year you desire.
+											<span><img src="images/maps.png" alt="blar" width="850" height="600"/></span>
+										</li>
+									</ul>
+								</div>
+								</p>
+								 <h3>Information about Data</h3>
+								<p>The csv file that was used can be found <a href="https://www.evl.uic.edu/aej/424/annual_generation_state.csv"> here </a></p>
+								<p>There were multiple manipulations done to the file so that the specified data can be shown. For the pre-processing
+									I had to initally convert the Energy Generated numbers from strings to numbers. Then, there were a couple 
+									missing identifiers which had to be found and then removed. After that, I made sure to convert a couple 
+									of the columns to categorical vallues. This helps in the graphing as every single one of them can be grouped
+									together. I erased any of the Energy Generated numbers that were negative, deleted some of the smaller energy sources 
+									and renamed the energy sources to be a bit more compact. </p>
+								<h3>Interesting Data Found</h3>
+								<p>I've found a couple things that may be of interest and worth researching a bit more. 
+									<div class="col-6 col-12-small">
+										<ul>
+											<li>Usage of Geothermal energy has been very low in the past 3 decades. Only a few
+												States adopted it 1990 and since then only few have been added since then. 
+												One interesting thing to note is that all of the states are in the west coast.
+												What may be the reason for that?
+											</li>
+											<li>Another thing to note is that almost a 100% of Kentucky's energy generation
+												comes from coal! That comes as a surprise since different states adjusted
+												as time passed on and some even had other energy sources being used more than coal.
+												But Kentucky seems to be dead set on that. 
+											</li>
+											<li>In contrast to Kentucky, if we look at California's energy usage it is basically no coal! 
+												This is very surprising as I thought it would have maybe steadily decreased. But no, even going
+												back to 1990, the usage of coal was little to practically none.
+											</li>
+											<li>
+												If we look at the changes in the usage of wind from 1990 to 2019, there is a huge one! 
+												In 1990, there were only a couple states that used it (5 to be exact). But now in 2019,
+												it seems like approximately 3/4s of the country takes advantage of it! Even if it may be in 
+												its infancy stages, it is nice to see different sources being taken advantage of.
+											</li>
+										</ul>
+								</p>
 							</section>
 
 					</div>
