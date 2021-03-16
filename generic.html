@@ -47,7 +47,66 @@
 									<p>All of my Projects created through R</p>
 								</header>
 								<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
-								<p><h2>Energy Generation in the United States from 1990 - 2019</h2>
+								<p><h2>Project 2: Mapping Energy Usages throughout the United States (2018, 2010, 2000)</h2>
+									<h3><a href = "https://sraza.shinyapps.io/project_2_424/">Click here to go to the website!</a>
+									</h3> 
+									<h3> <a href = "https://github.com/sraza1999/US_Energy_Mapping">Click here to go to Github!</a></h3> 
+									
+									<h3>Introduction</h3>
+									<p> There are many different sources of generating energy in the United States. Most of the popular ones are coal, solar and wind energy.
+									But there are many more such as nuclear, gas, and geothermal. All of that data is availabe online so after some pre-processing 
+									you can see all of the different plants with their respective energy sources in the United States. The data is represented in many different visual representations.
+									Some of the notable ones are: 
+									<div class="col-6 col-12-small">
+										<ul>
+											<li><b>Illinois Graph:</b> This initial graph allows you to see various plants in Illinois from the 2018 data. If you notice closely, you can see that ht eplants are resepctively color-coded. This allows you to see
+												the main source of energy for a specific plant. If you'd like feel free to press one of them to get more information about it. This will give you information such as the amount of generation
+												that was made by that specific plant.  
+												<span><img src="images/p2_part_1.png" alt="blar" width="850" height="600"/></span>
+											</li>
+											<li><b>Side By Side Comparision:</b> This section has far more features. In this one, there are two maps, with the first one showing
+												the plants in Illinois in the year 2000. And the second one is showing the plants in Illinois in the year 2018.
+												There is a lot more flexibility as you are able to control which State (and its respective plants) to see. 
+												Along with that, it has the same functionality as the previous one where you are able to select either all of the 
+												energy sources or just specific ones. 
+												<span><img src="images/p2_part2_z1.png" alt="blar" width="850" height="600"/></span>
+												<span><img src="images/p2_part2_z2.png" alt="blar" width="850" height="600"/></span>
+										</li>
+											<li><b>Complete United States:</b> As a culmination of all of the previous parts, this one allows you to see the whole United States!
+												It shows all of the plants that were throughout the U.S. in the three respective years (2018, 2010, 2000).
+												Along with that, there is also the previous feature of being able to choose a specific state and to choose specific energy options.
+												One additional feature is that the user can restrict the maximum generation and the minimum generation in total for the specific 
+												area that is being explored.
+												<span><img src="images/p2_part3.png" alt="blar" width="850" height="600"/></span>
+											</li>
+										</ul>
+									</div>
+									</p>
+									 <h3>Information about Data</h3>
+									<p>The csv file that was used can be found <a href="https://www.epa.gov/egrid/download-data"> here </a></p>
+									<p>There were multiple manipulations done to the file so that the specified data can be shown. Before I even transferred the 
+										data into RStudio, the data was actually in the .XLSX format and handle multiple sheets that I did not need to use. I downlaoded the general files for the 
+									respective years and then focused pn on the one tab that I needed (PLNT18 and so on). Then I still needed to delete a bunch of columns before I could move on
+								Specifically, I just needed the State information, Plant name, latitude, longitude and then the information about the respective energy sources so that is the actual amount they 
+							generated, percentages, etc.  </p>
+									<h3>Interesting Data Found</h3>
+									<p>I've found a couple things that may be of interest and worth researching a bit more. 
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>The usage was actually more in 2010 than in 2018! I found that to be very surprising as I would have thought that the 
+													energy geernation would have kept on increasing as the time passed on but it actually decreased even if it was just a minimal decrease
+													This brings up the question of whether the usage actually lowered or that we were able to optimize the usage
+												</li>
+												<li>Most of the Hydro plants are on the West Coast! I am not sure why. If the water is a reason, then what is the reason
+													for not as many on the East Coast? It is something worth looking into. 
+												</li>
+												<li>There are actually not that many plants for the major energy sources (gas, coal, etc.)! I was surprised to see more for others 
+													like wind. But if we change the slider for minimum generation, then the truth becomes very clear as most of the renewable energy sources
+													disapear quite instantly.
+												</li>
+											</ul>
+									</p>
+								<p><h2>Project 1: Energy Generation in the United States from 1990 - 2019</h2>
 								<h3><a href = "https://sraza.shinyapps.io/Project1/">Click here to go to the website!</a>
 								</h3> 
 								<h3> <a href = "https://github.com/sraza1999/424_EnergyGeneration">Click here to go to Github!</a></h3> 
@@ -55,8 +114,8 @@
 								<h3>Introduction</h3>
 								<p> There are many different sources of generating energy in the United States. Most of the popular ones are coal, solar and wind energy.
 								But there are many more such as wood, nuclear, petroleum, and geothermal. All of that data is availabe online so after some pre-processing 
-								you can see how much a specific energy source was generated throughout the years 1990 to 2019. The data is available in many different formats.
-								Some of the notable features are: 
+								you can see how much a specific energy source was generated throughout the years 1990 to 2019. The data is represented in many different visual representations.
+								Some of the notable ones are: 
 								<div class="col-6 col-12-small">
 									<ul>
 										<li><b>Line Graphs:</b> The initial line graphs show you the amount of generated energy for each of the 
